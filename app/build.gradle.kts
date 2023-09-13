@@ -12,8 +12,11 @@ plugins {
     id("com.google.devtools.ksp") version "1.7.10-1.0.6"
 }
 
+//fun getApiKey(): String {
+//    return com.android.build.gradle.internal.cxx.configure.gradleLocalProperties(rootDir).getProperty("TMDB_API_KEY")
+//}
 fun getApiKey(): String {
-    return com.android.build.gradle.internal.cxx.configure.gradleLocalProperties(rootDir).getProperty("TMDB_API_KEY")
+    return "360b017aec247987eb433b8820ecb402"
 }
 android {
     compileSdk = 33
@@ -25,7 +28,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        buildConfigField("String", "TMDB_API_KEY", getApiKey())
+//        buildConfigField("String", "TMDB_API_KEY", getApiKey())
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -147,6 +150,7 @@ dependencies {
 
     //Compose-Destinations
     implementation(libs.io.github.raamcosta.compose.destinations.animations.core)
+
     ksp(libs.io.github.raamcosta.compose.destinations.ksp)
 
     //Accompanist

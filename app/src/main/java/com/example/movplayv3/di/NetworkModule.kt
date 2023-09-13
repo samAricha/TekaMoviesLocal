@@ -48,7 +48,7 @@ object NetworkModule {
             val request = chain.request()
             val requestUrl = request.url
             val url = requestUrl.newBuilder()
-                .addQueryParameter("api_key", BuildConfig.TMDB_API_KEY)
+                .addQueryParameter("api_key", "360b017aec247987eb433b8820ecb402")
                 .build()
 
             val modifiedRequest = request.newBuilder()

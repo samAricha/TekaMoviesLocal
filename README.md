@@ -5,7 +5,7 @@
 <p align="center"><img src="screenshots/jetpack.png" alt="Movplay"></p>
 
 
-# Movplay V3
+# Movplay V3 from (https://github.com/Aldikitta/MovplayV3.git)
 This is the version 3 (Final) of An Android app built with Jetpack Compose consuming [TMDB API](https://www.themoviedb.org/documentation/api) to help users to have current information of the trending, popular, upcoming many other films.
 
 
